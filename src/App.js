@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+// import { WagmiConfig, createClient } from 'wagmi';
+// import { getDefaultProvider } from 'ethers';
+
 import './App.css';
+import Buy from './Buy';
+import Sell from './Sell';
+// import { Profile } from './Profile';
+
+// const client = createClient({
+//   autoConnect: true,
+//   provider: getDefaultProvider(),
+// });
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <WagmiConfig client={client}>
+        <Profile />
+      </WagmiConfig> */}
+      <div className="container">
+        <Buy />
+        <Sell />
+      </div>
+    </>
   );
 }
 
